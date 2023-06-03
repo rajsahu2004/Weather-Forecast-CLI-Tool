@@ -8,6 +8,15 @@ dotenv.load_dotenv()
 
 # Get weather data from OpenWeatherMap API
 def get_weather_data(city, api_key):
+    """_summary_
+
+    Args:
+        city (string): Name of the city you want to know the weather of
+        api_key (string): API Key of the Openweather account
+
+    Returns:
+        object: weather data 
+    """
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
     response = requests.get(url)
     if response.status_code == 200:
@@ -18,6 +27,11 @@ def get_weather_data(city, api_key):
         sys.exit(1)
 
 def parse_weather(weather_data):
+    """_summary_
+
+    Args:
+        weather_data (object) : weather data
+    """
     try:
         weather = weather_data['weather'][0]['main']
         temperature = weather_data['main']['temp']
