@@ -11,7 +11,7 @@ This is a command-line tool that accepts a city name and returns the current wea
 
 1. Clone the repository:
 
-        git clone https://github.com/rajsahu2004/weather-forecast-cli.git
+        git clone https://github.com/rajsahu2004/Weather-Forecast-CLI-Tool.git
 
 2. Navigate to the project directory:
 
