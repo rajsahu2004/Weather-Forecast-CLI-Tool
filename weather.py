@@ -26,6 +26,7 @@ def get_weather_data(city, api_key):
         # print(f'\033[91mError: {response.status_code} \033[00m')
         sys.exit(1)
 
+# Parse weather data
 def parse_weather(weather_data):
     """_summary_
 
@@ -47,7 +48,7 @@ def parse_weather(weather_data):
         print('\033[91mError: Invalid response from the API.\033[00m')
         sys.exit(1)
         
-        
+# Main function
 def main():
     if len(sys.argv) < 2:
         print('\033[91mError: Please provide a city name.\033[00m')
@@ -57,6 +58,7 @@ def main():
     api_key = os.getenv('API_KEY')
     weather_data = get_weather_data(city, api_key)
     parse_weather(weather_data)
-    
+
+# Run main function
 if __name__ == '__main__':
     main()
