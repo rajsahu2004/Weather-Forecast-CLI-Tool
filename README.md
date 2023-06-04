@@ -49,7 +49,7 @@ The tool will make a request to the OpenWeatherMap API and fetch the current wea
 
 ### Demo Video
 
-![Demo Video](media\videos\demo.mp4)
+![Demo Video](media/videos/demo.mp4)
 
 ## API Key
 
