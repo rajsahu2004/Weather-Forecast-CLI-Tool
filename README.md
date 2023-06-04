@@ -47,6 +47,10 @@ The tool will make a request to the OpenWeatherMap API and fetch the current wea
         Humidity: 65
         Wind Speed: 2.57
 
+### Demo Video
+
+[![Demo Video]('media/videos/demo.mp4')
+
 ## API Key
 
 To use the OpenWeatherMap API, you need an API key. If you don't have one, you can sign up for a free account at [OpenWeatherMap](https://openweathermap.org/) and obtain an API key.
